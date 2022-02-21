@@ -8,6 +8,7 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import Button from './components/Button';
+import Logo from './components/Logo';
 import SummaryText from './components/SummaryText';
 import Page1 from './pages/Page1';
 import Page2 from './pages/Page2';
@@ -60,6 +61,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
+        <Logo />
         <SummaryText
           heading={navItems[counter].heading}
           subheading={navItems[counter].subheading}
