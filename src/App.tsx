@@ -1,15 +1,10 @@
 import React from 'react';
-import {
-  BrowserRouter,
-  Link,
-  Route,
-  Routes,
-  useNavigate,
-} from 'react-router-dom';
+import { Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 import Button from './components/Button';
 import Logo from './components/Logo';
 import SummaryText from './components/SummaryText';
+import Timeline from './components/Timeline';
 import Page1 from './pages/Page1';
 import Page2 from './pages/Page2';
 import Page3 from './pages/Page3';
@@ -62,6 +57,7 @@ function App() {
     <div className="App">
       <div className="container">
         <Logo />
+        <Timeline />
         <SummaryText
           heading={navItems[counter].heading}
           subheading={navItems[counter].subheading}
