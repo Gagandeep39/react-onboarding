@@ -1,0 +1,15 @@
+.primaryBtn {
+  background-color: #664de5;
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.25rem;
+  color: #ffffff;
+  cursor: pointer;
+  max-width: 12rem;
+  transition: transform 0.2s ease;
+
+  &:active {
+    transform: scale(1.1);
+  }
+}

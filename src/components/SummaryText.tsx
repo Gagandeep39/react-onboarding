@@ -1,4 +1,4 @@
-import React from 'react';
+import styles from './SummaryText.module.scss';
 
 interface SummaryTextProps {
   heading: string;
@@ -7,8 +7,8 @@ interface SummaryTextProps {
 const SummaryText = (props: SummaryTextProps) => {
   return (
     <div>
-      <h1>{props.heading}</h1>
-      <p>{props.subheading}</p>
+      <h1 className={styles.heading}>{props.heading}</h1>
+      <p className={styles.subheading}>{props.subheading}</p>
     </div>
   );
 };
