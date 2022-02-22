@@ -58,7 +58,7 @@ function App() {
       <div className="container">
         <div className="inner-container">
           <Logo />
-          <Timeline activeIndex={counter} />
+          <Timeline total={navItems.length} activeIndex={counter} />
         </div>
         <SummaryText
           heading={navItems[counter].heading}
