@@ -6,6 +6,7 @@ interface TextFieldProps {
   hint?: string;
   onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
   optionalText?: string;
+  linkText?: string;
 }
 
 const TextField = (props: TextFieldProps) => {
@@ -15,17 +16,26 @@ const TextField = (props: TextFieldProps) => {
     ''
   );
 
+  const linkBox = props.linkText ? (
+    <input className={styles.link} disabled value={props.linkText} />
+  ) : (
+    ''
+  );
+
   return (
     <div>
       <label className={styles.label} htmlFor="item">
         {props.label} {optionaText}
       </label>
-      <input
-        className={styles.input}
-        type="text"
-        onChange={props.onChange}
-        placeholder={props.hint}
-      />
+      <div className={styles.linkContainer}>
+        {linkBox}
+        <input
+          className={styles.input}
+          type="text"
+          onChange={props.onChange}
+          placeholder={props.hint}
+        />
+      </div>
     </div>
   );
 };

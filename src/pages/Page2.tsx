@@ -5,7 +5,12 @@ const Page2 = () => {
   return (
     <div>
       <TextField label="Workspace name" hint="Eden" />
-      <TextField label="Workspace name" hint="Eden" optionalText="optional" />
+      <TextField
+        label="Workspace name"
+        hint="Eden"
+        linkText="www.eden.com/"
+        optionalText="optional"
+      />
     </div>
   );
 };
