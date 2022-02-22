@@ -1,12 +1,62 @@
+$primary-color: #664de5;
+$secondary-color: lightgrey;
+$secondary-text-color: #687389;
+$primary-text-color: #ffffff;
+$tracker-height: 2px;
+
 .timeline {
   margin: 4rem 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 
   span {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
-    background-color: red;
-    display: inline-block;
-    color: #ffffff;
+    color: $secondary-text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $secondary-color;
+    line-height: 100%;
+    &.active {
+      color: $primary-text-color;
+      background-color: $primary-color;
+
+      &::after {
+        content: '';
+        position: absolute;
+        height: $tracker-height;
+        background-color: $primary-color;
+        width: 16%;
+        transform: translateX(50%);
+        z-index: -1;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        height: $tracker-height;
+        background-color: $primary-color;
+        width: 16%;
+        transform: translateX(-50%);
+        z-index: -1;
+      }
+    }
+
+    &:first-of-type::before,
+    &:last-of-type::after {
+      content: unset;
+    }
+  }
+
+  .line {
+    position: absolute;
+    height: $tracker-height;
+    width: 100%;
+    background-color: $secondary-color;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
   }
 }
