@@ -1,0 +1,25 @@
+.label,
+.input {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+.label {
+  margin-bottom: 0.25rem;
+}
+
+.input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border: 1px solid rgb(218, 218, 218);
+  border-radius: 4px;
+  box-shadow: none;
+  outline: none;
+}
+
+.optional {
+  color: rgb(190, 190, 190);
+  font-size: small;
+}
