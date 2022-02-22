@@ -1,7 +1,27 @@
-import React from 'react';
+import styles from './Page3.module.scss';
+import Card from '../components/Card';
+import { useState } from 'react';
 
 const Page3 = () => {
-  return <div>Page3</div>;
+  const [active, setactive] = useState(-1);
+  return (
+    <div>
+      <div className={styles.cardContainer}>
+        <Card
+          title="For Myself"
+          description="Write better. Think more clearly. Stay organized."
+          isActive={active === 0}
+          clickEvent={() => setactive(0)}
+        />
+        <Card
+          clickEvent={() => setactive(1)}
+          title="For Myself"
+          isActive={active === 1}
+          description="Write better. Think more clearly. Stay organized."
+        />
+      </div>
+    </div>
+  );
 };
 
 export default Page3;
