@@ -28,5 +28,11 @@ code {
 }
 
 .inner-container {
+  margin: auto;
   text-align: center;
+  width: 60%;
+}
+
+.container {
+  width: 600px;
 }

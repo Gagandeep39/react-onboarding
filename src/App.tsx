@@ -56,8 +56,10 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Logo />
-        <Timeline activeIndex={counter} />
+        <div className="inner-container">
+          <Logo />
+          <Timeline activeIndex={counter} />
+        </div>
         <SummaryText
           heading={navItems[counter].heading}
           subheading={navItems[counter].subheading}
