@@ -16,6 +16,7 @@ const Page3 = () => {
           title="For Myself"
           description="Write better. Think more clearly. Stay organized."
           isActive={active === 0}
+          imageUrl="assets/person.svg"
           clickEvent={() => setactive(0)}
         />
         <Card
@@ -23,6 +24,7 @@ const Page3 = () => {
           title="For Myself"
           isActive={active === 1}
           description="Write better. Think more clearly. Stay organized."
+          imageUrl="assets/person2.svg"
         />
       </div>
     </div>

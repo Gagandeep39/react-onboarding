@@ -1,3 +1,5 @@
+@import '../styles/colors.scss';
+
 .logoContainer {
   display: flex;
   align-items: center;
@@ -6,5 +8,7 @@
   img {
     height: 2rem;
     display: inline-block;
+    filter: $primary-filter-color;
+    margin-right: 0.5rem;
   }
 }

@@ -6,6 +6,7 @@ interface CardProps {
   description: string;
   clickEvent: () => void;
   isActive?: boolean;
+  imageUrl: string;
 }
 
 const Card = (props: CardProps) => {
@@ -14,7 +15,7 @@ const Card = (props: CardProps) => {
   );
   return (
     <div className={classNames} onClick={props.clickEvent}>
-      <img src={logo} alt="Logo" />
+      <img src={props.imageUrl} alt="Logo" />
       <p>{props.title}</p>
       <p>{props.description}</p>
     </div>
