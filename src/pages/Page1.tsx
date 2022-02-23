@@ -1,3 +1,4 @@
+import SummaryText from '../components/SummaryText';
 import TextField from '../components/TextField';
 
 const Page1 = () => {
@@ -6,6 +7,10 @@ const Page1 = () => {
   };
   return (
     <div>
+      <SummaryText
+        heading="Welcome! First things first..."
+        subheading="You can always change them later."
+      />
       <TextField label="Full name" hint="Steve Jobs" onChange={temp} />
       <TextField label="Display name" hint="Steve" onChange={temp} />
     </div>

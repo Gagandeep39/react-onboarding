@@ -1,7 +1,14 @@
-import React from 'react';
+import SummaryText from '../components/SummaryText';
 
 const Page4 = () => {
-  return <div>Page4</div>;
+  return (
+    <div>
+      <SummaryText
+        heading="Congratulations, Eren!"
+        subheading="You have completed onboarding, you can start using Eden!"
+      />
+    </div>
+  );
 };
 
 export default Page4;

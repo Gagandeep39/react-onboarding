@@ -1,11 +1,16 @@
 import styles from './Page3.module.scss';
 import Card from '../components/Card';
 import { useState } from 'react';
+import SummaryText from '../components/SummaryText';
 
 const Page3 = () => {
   const [active, setactive] = useState(-1);
   return (
     <div>
+      <SummaryText
+        heading="How are you planning to use Eden?"
+        subheading="We'll streamline your setup experience accordingly."
+      />
       <div className={styles.cardContainer}>
         <Card
           title="For Myself"

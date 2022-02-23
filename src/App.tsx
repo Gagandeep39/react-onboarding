@@ -1,9 +1,7 @@
-import React from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 import Button from './components/Button';
 import Logo from './components/Logo';
-import SummaryText from './components/SummaryText';
 import Timeline from './components/Timeline';
 import Page1 from './pages/Page1';
 import Page2 from './pages/Page2';
@@ -60,10 +58,7 @@ function App() {
           <Logo />
           <Timeline total={navItems.length} activeIndex={counter} />
         </div>
-        <SummaryText
-          heading={navItems[counter].heading}
-          subheading={navItems[counter].subheading}
-        />
+
         <div className="inner-container">
           <Routes>
             {navItems.map((item) => (
