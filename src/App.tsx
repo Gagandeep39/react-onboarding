@@ -54,7 +54,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <div className="inner-container">
+        <div className="title-container">
           <Logo />
           <Timeline total={navItems.length} activeIndex={counter} />
         </div>

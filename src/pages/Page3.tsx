@@ -11,7 +11,7 @@ const Page3 = () => {
         heading="How are you planning to use Eden?"
         subheading="We'll streamline your setup experience accordingly."
       />
-      <div className={styles.cardContainer}>
+      <div className={styles.cardContainer + ' ' + 'form-group'}>
         <Card
           title="For Myself"
           description="Write better. Think more clearly. Stay organized."

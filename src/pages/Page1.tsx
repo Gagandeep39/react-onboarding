@@ -11,8 +11,10 @@ const Page1 = () => {
         heading="Welcome! First things first..."
         subheading="You can always change them later."
       />
-      <TextField label="Full name" hint="Steve Jobs" onChange={temp} />
-      <TextField label="Display name" hint="Steve" onChange={temp} />
+      <div className="form-group">
+        <TextField label="Full name" hint="Steve Jobs" onChange={temp} />
+        <TextField label="Display name" hint="Steve" onChange={temp} />
+      </div>
     </div>
   );
 };

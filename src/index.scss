@@ -22,6 +22,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 code {
@@ -29,10 +30,21 @@ code {
     monospace;
 }
 
+.title-container,
+.form-group {
+  width: min(100vw, 400px);
+  margin: auto;
+}
+
 .inner-container {
   margin: auto;
   text-align: center;
-  width: 60%;
+
+  height: min(350px, 100vh);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
