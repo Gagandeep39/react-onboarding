@@ -9,14 +9,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $outline;
-}
-
 *,
 *::after,
 *::before {
@@ -34,10 +26,10 @@ code {
   background-color: #ffffff;
   padding: 2rem;
   width: 100%;
-  margin: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 
 .title-container,
