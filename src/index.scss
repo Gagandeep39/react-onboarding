@@ -14,6 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $outline;
 }
 
 *,
@@ -28,6 +29,15 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.App {
+  background-color: #ffffff;
+  padding: 2rem;
+  width: 100%;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title-container,
