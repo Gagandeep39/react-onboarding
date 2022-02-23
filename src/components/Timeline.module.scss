@@ -1,7 +1,5 @@
-$primary-color: #664de5;
-$secondary-color: lightgrey;
-$secondary-text-color: #687389;
-$primary-text-color: #ffffff;
+@import '../styles/colors.scss';
+
 $tracker-height: 2px;
 
 .timeline {

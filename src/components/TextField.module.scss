@@ -1,3 +1,5 @@
+@import '../styles/colors.scss';
+
 .label,
 .input {
   display: block;
@@ -14,14 +16,14 @@
   padding: 0.5rem;
   margin-bottom: 1rem;
   background-color: transparent;
-  border: 1px solid rgb(218, 218, 218);
+  border: 1px solid $secondary-color;
   border-radius: 4px;
   box-shadow: none;
   outline: none;
 }
 
 .optional {
-  color: rgb(190, 190, 190);
+  color: $secondary-text-color;
   font-size: small;
 }
 
@@ -31,7 +33,7 @@
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     width: 35%;
-    background-color: rgb(235, 235, 235);
+    background-color: $secondary-color;
     & + input {
       border-bottom-left-radius: 0;
       border-top-left-radius: 0;

@@ -1,9 +1,11 @@
+@import '../styles/colors.scss';
+
 .heading {
   text-align: center;
 }
 
 .subheading {
-  color: #969494;
+  color: $secondary-text-color;
   text-align: center;
   padding: 1rem 0;
 }
