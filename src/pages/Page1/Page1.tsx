@@ -1,5 +1,5 @@
-import SummaryText from '../components/SummaryText';
-import TextField from '../components/TextField';
+import SummaryText from '../../components/SummaryText/SummaryText';
+import TextField from '../../components/TextField/TextField';
 
 const Page1 = () => {
   const temp = (t: any) => {

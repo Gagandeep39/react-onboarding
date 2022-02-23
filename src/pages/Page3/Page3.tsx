@@ -1,7 +1,7 @@
 import styles from './Page3.module.scss';
-import Card from '../components/Card';
 import { useState } from 'react';
-import SummaryText from '../components/SummaryText';
+import Card from '../../components/Card/Card';
+import SummaryText from '../../components/SummaryText/SummaryText';
 
 const Page3 = () => {
   const [active, setactive] = useState(-1);
@@ -11,7 +11,7 @@ const Page3 = () => {
         heading="How are you planning to use Eden?"
         subheading="We'll streamline your setup experience accordingly."
       />
-      <div className={styles.cardContainer + ' ' + 'form-group'}>
+      <div className={styles.cardContainer + ' form-group'}>
         <Card
           title="For Myself"
           description="Write better. Think more clearly. Stay organized."

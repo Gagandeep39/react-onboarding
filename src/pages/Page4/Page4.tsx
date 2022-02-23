@@ -1,4 +1,4 @@
-import SummaryText from '../components/SummaryText';
+import SummaryText from '../../components/SummaryText/SummaryText';
 import styles from './Page4.module.scss';
 
 const Page4 = () => {

@@ -1,4 +1,3 @@
-import logo from '../logo.svg';
 import styles from './Card.module.scss';
 
 interface CardProps {
