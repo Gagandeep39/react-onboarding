@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Route, Routes, useNavigate } from 'react-router-dom';
 import './App.css';
 import Button from './components/Button/Button';
@@ -8,8 +9,8 @@ import Page2 from './pages/Page2/Page2';
 import Page3 from './pages/Page3/Page3';
 import Page4 from './pages/Page4/Page4';
 
-let counter = 0;
 function App() {
+  const [counter, setCounter] = useState(0);
   const navItems = [
     {
       index: 0,
@@ -39,8 +40,8 @@ function App() {
   const history = useNavigate();
 
   const onClick = () => {
-    if (counter + 1 === navItems.length) counter = 0;
-    else counter += 1;
+    if (counter + 1 === navItems.length) setCounter(0);
+    else setCounter(counter + 1);
     history(navItems[counter].route);
   };
   return (
